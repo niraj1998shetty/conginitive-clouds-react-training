@@ -1,0 +1,36 @@
+.input_content{
+display: flex;
+flex-direction: column;
+margin: -8% 7% 0 20.5%;
+justify-content:space-around;
+align-items:flex-start;
+
+}
+
+.input{
+width:40%;
+padding:15px;
+margin-bottom: 10px;
+outline: none;
+border:none;
+border-bottom: 1px solid rgba(0,0,0,0.12);
+
+}
+.select{
+    padding: 8px;
+    border:none;
+    background-color: #e8f0fe;
+    margin:5px 0 10px 0;
+}
+.button_content{
+    margin-top: 50px;
+    margin-left: 20%;
+}
+.button{
+    padding:1rem 3rem 1rem 3rem;
+    background-color: #1967d2;
+    color:white;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+}

@@ -1,0 +1,52 @@
+.header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    color: #5f6368;
+    font-size: 15px;
+    font-weight: 500;
+    padding-bottom: 5px;
+    border-bottom: 1px solid rgba(0,0,0,0.12);
+    box-sizing: border-box;
+    position: relative;
+    width:100%;
+}
+.main_content{
+    margin: -10% 7% 0 18.5%;
+}
+.list_content{
+
+}
+.dots{
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: 500;
+}
+.card{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.card_content{
+    max-width: 100%;
+}
+.table{
+    width: 100%;
+}
+.td{
+   /*  border: 1px solid #111010; */
+    text-align: left;
+    padding: 8px;
+    width:100%;
+    word-break: break-word;
+
+  
+}
+.card:hover{
+    background-color: #f1f3f4;
+}
+.trash{
+    font-size: 20px;
+    margin-right: 10px;
+}

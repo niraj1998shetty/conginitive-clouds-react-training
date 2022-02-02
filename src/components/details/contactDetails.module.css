@@ -1,0 +1,106 @@
+.container{
+    margin: -10% 7% 0 18.5%;
+    flex-wrap: nowrap;
+    max-width: 950px;
+    padding-bottom: 8px;
+}
+.container img{
+    border-radius: 50%;
+    height: 162px;
+    width: 162px;
+    margin-left: 10%;
+}
+.basic_detail{
+    display: flex;
+    flex-direction: row;
+    justify-content:stretch;
+    align-items: center;
+}
+.basic_detail span{
+    font-weight: 800;
+    font-size: 20px;
+    cursor: pointer;
+    margin-bottom: 17%;
+    outline-style: none;
+}
+.name_box{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;  
+}
+.name{
+    width:100%;
+}
+.name_box div{
+    margin-left: 10%;
+    font-size:40px;
+    font-weight: 350;
+    color: #3c4043;
+}
+.edit{
+    display: flex;
+    float: right;
+    margin-right: 50px;
+}
+.edit div{
+    margin-right: 10%;
+    margin-top: -30%;
+}
+.edit button{
+    padding:1rem 2rem 1rem 2rem;
+    background-color: #1967d2;
+    color:white;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.edit .icon{
+    margin-top: -15%;
+    cursor: pointer;
+    color: rgba(0,0,0,0.6);
+}
+.edit .icon:hover{
+    color: rgba(0,0,0,0.97);
+}
+.upper{
+    height: 225px;
+    border: none;
+    border-bottom:solid 1px #dadce0;
+
+}
+
+.details_container{
+border: 1px solid #dadce0;
+margin: 2% 8%;
+padding: 2%;
+border-radius: 5px;
+}
+.header{
+margin-top: 8px 8px 0 8px ;
+font-family: 'Google Sans',Roboto,Arial,sans-serif;
+font-weight:bold;
+font-size: 1rem;
+letter-spacing: 0.03rem;
+}
+.div{
+    display: flex;
+    flex-direction: row;
+    margin-top: 15px;
+}
+.phone_icon{
+font-weight:bolder;
+margin-top: 3px;
+}
+.details{
+margin-left: 2%;
+}
+.details span{
+    margin-left: 5px;
+}
+
+.basic_detail a{
+    text-decoration: none;
+    outline-style: none;
+}
