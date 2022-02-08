@@ -1,6 +1,17 @@
 import style from "./Header.module.css";
 import { Link, NavLink } from "react-router-dom";
-const Header = () => {
+import { useRef, useState } from "react";
+import { BiSearch } from "react-icons/bi";
+import {CgProfile} from "react-icons/cg"
+import {AiOutlineUserAdd} from "react-icons/ai"
+import {BiRefresh} from "react-icons/bi"
+import {BsAppIndicator} from "react-icons/bs"
+const Header = (props) => {
+  const inputEl = useRef();
+  const getSearchTerm = () => {
+    props.searchHandler(inputEl.current.value);
+  };
+  console.log(props);
   return (
     <>
       <div className={style.header}>
@@ -13,14 +24,22 @@ const Header = () => {
             ></img>
             <span>Contacts</span>
           </div>
-
-          <input
-            className={style.input}
-            type="text"
-            name="search"
-            placeholder="Search"
-          ></input>
-
+          <div className={style.input_div}>
+            <div className={style.search_icon}>
+              <BiSearch />
+            </div>
+            <input
+              className={style.input}
+              type="text"
+              name="search"
+              placeholder="Search"
+              /* onChange={getSeachTerm}
+            value={searchTerm} */
+              value={props.searchTerm}
+              onChange={getSearchTerm}
+              ref={inputEl}
+            ></input>
+          </div>
           <div>
             <img
               src="https://admin.google.com/u/0/ac/images/logo.gif?uid=105374338632565604146&service=google_gsuite"
@@ -36,23 +55,30 @@ const Header = () => {
           </div>
         </nav>
       </div>
-      <div>
-        <aside className={style.asideContainer}>
-          <NavLink
-            style={({ isActive }) => {
-              return { backgroundColor: { isActive } ? "#e8f0fe" : "black" };
-            }}
+     
+        <div className={style.asideContainer}>
+          <NavLink style={({isActive})=>{
+            return {
+              backgroundColor:isActive?"#e8f0fe":"white",
+              color:isActive?"#1967d2":"#202124",
+              fontSize:"100px"
+            }
+          }}
             to="/"
           >
-            <div className={style.content}>Contacts</div>
+            <div className={style.content}><CgProfile/>&nbsp;&nbsp;Contacts&nbsp;&nbsp;<span style={{color:"#91b8f1"}}>{props.contacts.length}</span></div>
           </NavLink>
-          <Link to="/add">
-            <div className={style.content}>Add To Contacts</div>
-          </Link>
-          <div className={style.content}>Frequently contacted</div>
-          <div className={style.content}>Distionary</div>
-        </aside>
-      </div>
+          <NavLink to="/add" style={({isActive})=>{
+            return {
+              backgroundColor:isActive?"#e8f0fe":"white"
+            }
+          }}>
+            <div className={style.content}><AiOutlineUserAdd/>&nbsp;&nbsp;Add To Contacts</div>
+          </NavLink>
+          <div className={style.content}><BiRefresh/>&nbsp;&nbsp;Frequently contacted</div>
+          <div className={style.content}><BsAppIndicator/>&nbsp;&nbsp;Distionary</div>
+        </div>
+      
     </>
   );
 };

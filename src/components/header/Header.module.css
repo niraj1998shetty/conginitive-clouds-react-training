@@ -1,59 +1,84 @@
-.contact{
-    display: flex;
-    align-items: center;
-    color: #5f6368;
-    font-size:25px;
-    font-weight: 500;
+.contact {
+  display: flex;
+  align-items: center;
+  color: #5f6368;
+  font-size: 25px;
+  font-weight: 500;
+}
+.nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0px 30px;
+  background-color: white;
+}
+.input {
+  border-radius: 8px;
+  border: none;
+  outline: none;
+  font-size: 14px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: -webkit-fill-available;
+  padding: 7px;
+  background-color: #f1f3f4;
+}
+.asideContainer {
+  position: fixed;
+  width: 17%;
+  display: flex;
+  flex-direction: column;
+  margin-top: -12px;
+}
+.content {
+  /* background-color:#e8f0fe ;
+ */
+  padding: 10px;
+  border-radius: 0px 30px 30px 0px;
+  color: #202124;
+  font-weight: 500;
+  font-size: medium;
+  text-indent: 40px;
+  cursor: pointer;
+  outline-style: none;
+}
+.content:hover {
+  background-color: #f1f3f4;
+}
 
+.account {
+  border-radius: 50%;
+  margin: 0 0 10px 2px;
 }
-.nav{
-    display:flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    margin: 0 30px;
+.search_icon {
+  margin-top: 5px;
+  font-size: 20px;
 }
-.input{
-    background-color: #f1f3f4;
-    width: 42%;
-    align-items: center;
-    padding: 15px;
-    border-radius: 8px;
-    border: none;
-    float: left;
-    outline: none;
-    margin-right: 23%;
-    text-align: justify;
-    font-size: 14px;
+.search_icon:hover {
+  color: #959799;
 }
-.asideContainer{
-    width:17%;
-    display: flex;
-    flex-direction: column;
-    margin-top: 5px;
+.input_div {
+  background-color: #f1f3f4;
+  width: 42%;
+  align-items: center;
+  padding: 5px;
+  border-radius: 8px;
+  border: none;
+  float: left;
+  outline: none;
+  margin-right: 28%;
+  text-align: justify;
+  font-size: 14px;
+  margin-top: 3px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 }
-.content{
-/* background-color:#e8f0fe ;
- */padding: 10px;
-border-radius: 0px 30px 30px 0px;
-color: #202124;
-font-weight: 500;
-font-size: medium;
-text-indent: 40px;
-cursor: pointer;
-outline-style: none;
-}
-.content:hover{
-    background-color:#f1f3f4;
-}
-.content:active{
-    background-color: #e8f0fe;  
-    color: #1967d2;
-}
-.act:active{
-    background-color: teal;
-}
-.account{
-    border-radius: 50%;
-    margin:0 0 10px 2px;
+.header {
+  position: fixed;
+  overflow: hidden;
+  width: 100%;
+  margin-top: -85px;
 }
