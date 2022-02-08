@@ -5,6 +5,7 @@ import Header from "./components/header/Header";
 import CreateProfile from "./components/create/CreateProfile";
 import Contacts from "./components/contacts/Contacts";
 import ContactDetails from "./components/details/ContactDetails";
+import Edit from "./components/edit/Edit.js"
 
 function App() {
   const LOCAL_STORAGE_KEY = "contacts";
@@ -41,6 +42,7 @@ function App() {
       <Route path="/add" element={<CreateProfile addContactHandler={addContactHandler}/>} exact/>
       <Route path="/" element={<Contacts contacts={contacts} getContactId={removeContactHandler}/>}/>
       <Route path="/contact/:id" element={<ContactDetails/>}></Route>
+      <Route path="/edit" element={<Edit/>}></Route>
       </Routes>
       </BrowserRouter>
     </div>

@@ -28,7 +28,7 @@ navigate(`/contact/${id}`,{state:props.contact});
           <div onClick={detailsClick}>{gender}</div>
         </td>
         <td className={style.td}>
-          <div className={style.trash}><MdDeleteForever onClick={()=>{props.clickHandler(id)}}/>&nbsp;&nbsp;&nbsp;<MdModeEditOutline/></div>
+          <div className={style.trash}><MdDeleteForever onClick={()=>{props.clickHandler(id)}}/>&nbsp;&nbsp;&nbsp;<MdModeEditOutline onClick={()=>{navigate("/edit",{state:props.contact});}}/></div>
         </td>
       </div>
     </div>
